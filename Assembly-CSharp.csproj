@@ -46,7 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\C#\CountdownTimer.cs" />
+     <Compile Include="Assets\C#\PlayerController.cs" />
+     <Compile Include="Assets\C#\PlayerMotor.cs" />
+     <Compile Include="Assets\C#\PlayerShoot.cs" />
+     <Compile Include="Assets\C#\PlayerWeapon.cs" />
+     <None Include="Assets\Text\OFL.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

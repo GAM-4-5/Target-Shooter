@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 349d5aac38957244195394ab6f8bf4c5
+timeCreated: 1585504974
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Baloo Thambi 2
+  fontNames:
+  - Baloo Thambi 2
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2ddad23466e48a54f98be70d771f78c2, type: 3}
+  - {fileID: 12800000, guid: 346c330637c6d6b419b9af5a3a10b549, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
