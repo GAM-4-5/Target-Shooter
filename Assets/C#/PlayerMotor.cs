@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerMotor : MonoBehaviour 
+public class PlayerMotor : MonoBehaviour //uređivanje i podešavanje funkcija igrača
 {
 
 	[SerializeField]
 	private Camera cam;
 
-	private Vector3 velocity = Vector3.zero;
-	private Vector3 rotation = Vector3.zero;
-	private Vector3 cameraRotation = Vector3.zero;
+	private Vector3 rotation = Vector3.zero; //postavljanje mogućnosti rotacije puške
+	private Vector3 cameraRotation = Vector3.zero; //postavljanje mogućnosti rotacije kamere 
 
 	private Rigidbody rb;
 
@@ -17,43 +16,25 @@ public class PlayerMotor : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody>();
 	}
-
-	//Gets a movement vector
-	public void Move(Vector3 _velocity)
-	{
-		velocity = _velocity;
-	}
-
-	//Gets a rotational vector
-	public void Rotate(Vector3 _rotation)
+		
+		
+	public void Rotate(Vector3 _rotation) //korištenje vektora rotacije puške
 	{
 		rotation = _rotation;
 	}
-
-	//Gets a rotational vector for the camera
-	public void RotateCamera(Vector3 _cameraRotation)
+		
+	public void RotateCamera(Vector3 _cameraRotation) //korištenje vektora rotacije kamere
 	{
 		cameraRotation = _cameraRotation;
 	}
-
-	//Run every physics iteration
-	void FixedUpdate()
+		
+	void FixedUpdate() //izvođenje funkcija vezanih uz fiziku
 	{
-		PerformMovement();
 		PerformRotation();
 	}
 
-	//Performs movement based on velocity variable
-	void PerformMovement()
-	{
-		if (velocity != Vector3.zero) 
-		{
-			rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
-		}
-	} 
-
-	//Perform rotation
-	void PerformRotation()
+		
+	void PerformRotation() //izvođenje rotacije
 	{
 		rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation)); 
 		if (cam != null) 

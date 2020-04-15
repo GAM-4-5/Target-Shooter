@@ -1,0 +1,60 @@
+Initialize engine version: 5.6.7f1 (e80cc3114ac1)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: ATI Mobility Radeon HD 3650 (ID=0x9591)
+    Vendor:   ATI
+    VRAM:     1147 MB
+    Driver:   8.970.100.9001
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Erika_unity\Erikaprojekt\bin_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Erika_unity\Erikaprojekt\bin_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Erika_unity\Erikaprojekt\bin_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Erika_unity\Erikaprojekt\bin_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Erika_unity\Erikaprojekt\bin_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Erika_unity\Erikaprojekt\bin_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Erika_unity\Erikaprojekt\bin_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Erika_unity\Erikaprojekt\bin_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.849 seconds
+Platform assembly: D:\Erika_unity\Erikaprojekt\bin_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Erika_unity\Erikaprojekt\bin_Data\Managed\System.dll (this message is harmless)
+desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.763400 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 38a4 -> priority: 1 
+Untagged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Wall
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Untagged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Untagged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Wall
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Untagged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Untagged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Untagged
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

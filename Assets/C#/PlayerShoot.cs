@@ -4,27 +4,27 @@ using UnityEngine.UI;
 public class PlayerShoot : MonoBehaviour
 {
 
-	public PlayerMotor motor;
-	public PlayerController controller;
+	public PlayerMotor motor; //uvođenje ili definiranje funkcije pokreta igrača
+	public PlayerController controller; //uvođenje ili definiranje funkcije kojom usklađujemo pomak miša i fokus kamere
 
-	public GameObject cup2;
+	public GameObject cup2; //uvođenje ili definiranje coffee to go čaša
 	public GameObject cup3;
 	public GameObject cup4;
 	public GameObject cup5;
 	public GameObject cup6;
-	public PlayerWeapon weapon;
-	public int range = 1000;
+	public PlayerWeapon weapon; //uvođenje ili definiranje oružja, tj. puške
+	public int range = 1000; //domet metka
 
-	public Text ScoreText;
-	public Text FinaleScore;
-	public Text countdownText;
-	public float currentTime = 10f;
+	public Text ScoreText; //prikaz trenutnog rezultata
+	public Text FinaleScore; //prikaz završnog ili konačnog rezultata
+	public Text countdownText; //prikaz trenutne vrijednosti timera
+	public float currentTime = 10f; //početno vrijeme od kojeg započinje odbrojavanje
 
-	public GameObject text;
+	public GameObject text; //završni tekst
 
-	public int Hits;
+	public int Hits; //uvođenje ili definiranje hitaca, tj. pucnjeva
 
-	public Camera cam;
+	public Camera cam; //uvođenje ili definiranje kamere
 
 	void Start()
 	{
@@ -34,12 +34,12 @@ public class PlayerShoot : MonoBehaviour
 			Debug.LogError("PlayerShoot: No camera referenced!");
 			this.enabled = false;
 		}
-		text.SetActive(false);
+		text.SetActive(false); //onemogućavanje prikazivanja završnog teksta do trenutka kada završimo igrati
 	}
 
 	void Update()
 	{
-		if (Input.GetButtonDown("Fire1")) {
+		if (Input.GetButtonDown("Fire1")) { //početak odbrojavanja
 			Shoot();
 		}
 		ScoreText.text = Hits.ToString();
@@ -47,7 +47,7 @@ public class PlayerShoot : MonoBehaviour
 
 		if (currentTime <= 0)
 		{
-			currentTime = 0;
+			currentTime = 0; //postavljanje ograničenja pokreta i kontrole nad kamerom kada vrijednost timera bude jednaka nuli
 			motor.enabled = false;
 			controller.enabled = false;
 			text.SetActive(true);
@@ -58,7 +58,7 @@ public class PlayerShoot : MonoBehaviour
 	void Shoot()
 	{
 		RaycastHit _hit;
-		if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, range)) {
+		if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, range)) { //određivanje posljedica kada pogodimo coffee to go čašu, tj. kada ju pogodimo, ona će nestati, a rezultat će se povećati za 1
 			Debug.Log(_hit.collider.tag);
 			}
 			if (_hit.collider.name == "Cup2") {
