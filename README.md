@@ -1,5 +1,5 @@
 # Target Shooter
-vrlo jednostavna igrica u kojoj unutar 10 sekundi morate pogoditi što više coffee to go čaša (max score je 5). 
+Vrlo jednostavna igrica u kojoj unutar 10 sekundi morate pogoditi što više coffee to go čaša (max score je 5). 
 
 * [X] proučiti Unity C#
 * [X] razraditi ideju igrice
